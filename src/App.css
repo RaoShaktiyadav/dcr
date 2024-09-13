@@ -6,7 +6,18 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.navbar-brand{
+  width: 8%;
+  height: 100%;
+  margin: 0% 9%;
+}
+.active{
+  font-weight: 700;
+  
+}
+.nav-link{
+  justify-content: space-between;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
