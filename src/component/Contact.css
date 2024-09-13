@@ -1,0 +1,139 @@
+.ca{
+    background-image: url("./img/cont.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.cd{
+    display: flex;
+    background-color: rgb(238, 237, 235);
+    height: 50vh;
+    width: 100%;
+    height: 70vh;
+}
+.cb{
+   
+    margin: 0% 3%;
+    width: 45%;
+    height: 50vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: 400;
+    padding: 4% 4% ;
+    
+}
+.cf{
+    background-color: brown;
+    margin-left: 40%;
+    width: 19%;
+}
+input {
+    width:90% ;
+  
+}
+textarea{
+    width: 90%;
+}
+.ce{
+    line-height: 140px;
+    color: rgb(231, 160, 45);
+    border-color: blue;
+    border-width: 9px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cc{
+    
+    height: 50vh;
+    width: 45%;
+    margin: 3% 3%;
+    
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+
+.footer-section{
+    background-color: #ffd6d65e;
+  }
+  /*.container{
+    border: 1px solid green;
+  }
+  .footer-cta{
+    border: 1px solid black;
+    
+  }
+  .row{
+    
+    border: 1px solid black;
+  }
+  .col-xl-4{
+    border: 1px solid rebeccapurple;
+  }
+  .single-cta{
+    border: 1px solid hotpink;
+  } */
+  
+  .fas {
+    padding: 5% 5%;
+    color: #088178;
+    font-size: x-large;
+  
+  float: left; 
+  }
+  .far{
+    font-size:x-large;
+    color: #088178;
+    padding: 5% 5%;
+    float: left; 
+    }
+   h4{
+    margin: 0% 10%;
+   }
+   .img-fluid{
+    height: 50%;
+    width: 60%;
+   } 
+   .col-lg-4{
+    margin-left: 12%;
+    
+  }
+  .footex{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .fa-brands{
+    font-size: xx-large;
+   
+  }
+  #button{
+    background-color: rgb(20, 216, 20);
+    margin: 0% 3% 3% 3%;
+  }
+  .inco{
+    background-color: #000000;
+    
+  }
+  
+  #but{
+  background-color: #2242f2;
+  }
+  @media only screen and (max-width:600px){
+.cd{
+  display: grid;
+  height: auto;
+}
+.cb{
+  width: 94%;
+}
+.cc{
+  width: 94%;
+}
+  
+  
+  };
+
+  

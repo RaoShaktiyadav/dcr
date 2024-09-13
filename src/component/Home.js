@@ -191,7 +191,7 @@ const  Home = ({ phoneNumber, message }) => {
               <i class="fa-solid fa-star" aria-hidden="true"></i>
             </div>
             <h4 class="price">₹5500</h4>
-            <i  onClick={whatapp} class="fa-brands fa-square-whatsapp fa-beat"></i>
+            <i  onClick={whatapp}  class="fa-brands fa-square-whatsapp fa-beat"></i>
             </div>
           <div class="product-cart">
             <img src={f4} alt="product imag"/>

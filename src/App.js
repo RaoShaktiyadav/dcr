@@ -2,6 +2,8 @@ import logo from "./component/img/logo.jpg";
 import "./App.css";
 import "./component/Contact.css";
 import "./component/Home.css";
+import "./component/About.css";
+import "./component/Cars.css";
 import {
     BrowserRouter as Router,
     Routes,
@@ -11,7 +13,6 @@ import {
 
 import Home from "./component/Home";
 import Cars from "./component/Cars";
-
 import About from "./component/About";
 import Contact from "./component/Contact";
 
