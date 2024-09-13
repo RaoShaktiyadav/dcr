@@ -1,6 +1,6 @@
 #hero{
     
-  background-image: url('./img/her.png');
+  background-image: url("./img/her.png");
   background-size: cover;
 background-repeat: no-repeat;
 background-origin: border-box;
