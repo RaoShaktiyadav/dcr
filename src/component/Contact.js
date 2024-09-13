@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import log from './img/logo.jpg'
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
 
 const Contact =({ phoneNumber, message })=> {
 
