@@ -119,6 +119,7 @@ const  Home = ({ phoneNumber, message }) => {
 
 
       <section id="features" class="section-p1">
+       
         <div class="f-box">
           <img src={g1} alt="free shipping"/>
           <h6>Home Pickup</h6>

@@ -96,75 +96,76 @@
     font-size: 0.9rem;
   }
 }
-
-p{
-  color: beige;
-}
-
-
-
-
-
-.h1{
-  margin-top: 100px;
-  font-size: 600;
-  font-size: xx-large;
-} 
-p{
-  font-weight: 600;
-  color: #0000005e;
-  margin-top: 20px;
-}
+/* General styles for the section */
 #features {
-
+  padding: 40px 20px;
   display: flex;
-  flex-wrap:wrap ;
-  justify-content: space-around;
-  margin: 0 60px;
-  
-}
-#features .f-box {
-  width: 180px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   text-align: center;
-  padding: 25px 15px;
-  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-  border: 1px solid #cce7d0;
-  border-radius: 4px;
-  margin: 15px 0;
-  transition: box-shadow 0.3s;
+  background-color: #f8f9fa; /* Optional background color */
 }
-#features .f-box:hover {
-  box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.1);
-}
-#features .f-box img {
-  width: 100%;
-  margin-bottom: 10px;
-}
-#features .f-box h6 {
-  display: inline-block;
-  padding: 9px 8px 6px 8px;
-  line-height: 1;
-  font-size: 14px;
-  border-radius: 4px;
-  color: #088178;
-  background-color: #fddde4;
-}
-#features .f-box:nth-child(2) h6 {
-  background-color: #cdebbc;
-}
-#features .f-box:nth-child(3) h6 {
-  background-color: #d1e8f2;
-}
-#features .f-box:nth-child(4) h6 {
-  background-color: #cdd4f8;
-}
-#features .f-box:nth-child(5) h6 {
-  background-color: #f6dbf6;
-}
-#features .f-box:nth-child(6) h6 {
-  background-color: #fff2e5;
+.hf1{
+  text-align: center;
 }
 
+#features h2 {
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Styles for the feature boxes */
+.f-box {
+  flex: 1 1 30%;
+  max-width: 30%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.f-box img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.f-box h6 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.f-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .f-box {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  #features h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .f-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  #features h2 {
+    font-size: 1.5rem;
+  }
+}
+/* 
 .product-section{
 
 margin: 0% 2%;
@@ -241,95 +242,302 @@ margin: 0% 2%;
   color: #088178;
   padding: 14px 65px 14px 65px;
 }
-
-
-
-
-
-  
-.a{
-  color: #fcfcfb;
+ */
+/* General styles for product section */
+.product-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f5f5f5; /* Optional background */
 }
-#banners ,
-h4,
-span {
-  color: rgb(3, 3, 3);
-  text-shadow: #cdebbc;
+
+.product-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
-#banners .big-banners {
+
+.product-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Product collection styling */
+.pro-collection {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
-#banners .big-banners div {
-  width: 50%;
-  margin: 15px;
+
+/* Product cart styling */
+.product-cart {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  flex: 1 1 22%;
+  max-width: 22%;
+  text-align: center;
+}
+
+.product-cart img {
+  width: 100%; /* Full width image */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-cart span {
+  display: block; /* Forces span to new line */
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.product-cart h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.product-cart .stars {
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.product-cart .price {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.product-cart i.fa-brands.fa-square-whatsapp {
+  font-size: 1.8rem;
+  color: #25D366;
+  cursor: pointer;
+}
+
+.product-cart:hover {
+  transform: translateY(-5px);
+}
+
+/* Button styling */
+.butt {
+  margin-top: 30px;
+  padding: 10px 30px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.butt:hover {
+  background-color: #555;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .product-cart {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .product-section h1 {
+    font-size: 2rem;
+  }
+
+  .product-section p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .product-cart {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .product-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .product-section p {
+    font-size: 1rem;
+  }
+
+  .product-cart img {
+    width: 100%; /* Full width on mobile */
+    border-radius: 8px;
+  }
+
+  .product-cart h4 {
+    font-size: 1.2rem;
+  }
+
+  .product-cart .price {
+    font-size: 1.3rem;
+  }
+}
+/* Section Styles */
+#banners {
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.big-banners, .small-banners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.big-banners-1, .big-banners-2, .small-banners-1, .small-banners-2, .small-banners-3 {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 40px 20px;
+  color: white;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.big-banners-1, .big-banners-2 {
+  flex: 1 1 45%;
   height: 300px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 25px;
-  background-size: cover;
-  backdrop-filter: blur(8%);
-}
-#banners .big-banners button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: transparent;
-  color: rgb(248, 248, 248);
-  border: 1px solid rgb(248, 248, 248);
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-#banners .big-banners div:hover button {
-  background-color: #088178;
-  border: 1px solid #088178;
-}
-#banners .big-banners-1 {
-  background-image: url(./img/bmw\ bg.jpg);
-}
-#banners .big-banners-2 {
-  background-image: url(./img/bmw\ bg1.jpg);
-}
-#banners .small-banners-1 {
-  background-image: url(./img/bmw\ bg2.jpg);
-}
-#banners .small-banners-2 {
-  background-image: url(./img/bmw\ bg3.jpg);
-}
-#banners .small-banners-3 {
-  background-image: url(./img/bmw\ bg4.jpg);
-}
-#banners .small-banners {
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
-#banners .small-banners div {
-  width: 30%;
+
+.small-banners-1, .small-banners-2, .small-banners-3 {
+  flex: 1 1 30%;
   height: 200px;
-  margin: 15px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
-  padding: 25px;
-  background-size: cover;
-}
-#banners .small-banners h2 {
-  font-size: 25px;
-}
-#banners .small-banners h5 {
-  color: #771818;
 }
 
+/* Background Images */
+.big-banners-1 {
+  background-image: url('./img/bmw\ bg.jpg');
+}
 
-.b{
-width: 90px;
-height: 10vh;
+.big-banners-2 {
+  background-image: url('./img/bmw\ bg1.jpg');
+}
+
+.small-banners-1 {
+  background-image: url('./img/bmw\ bg2.jpg');
+}
+
+.small-banners-2 {
+  background-image: url('./img/bmw\ bg3.jpg');
+}
+
+.small-banners-3 {
+  background-image: url('./img/bmw\ bg4.jpg');
+}
+
+/* Text Styling */
+.big-banners h4, .big-banners h2, .small-banners h2 {
+  margin: 0;
+}
+
+.big-banners h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.big-banners h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.big-banners span {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.small-banners h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.small-banners h5 {
+  font-size: 1rem;
+}
+
+.banner-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.banner-btn:hover {
+  background-color: #555;
+}
+
+/* Hover Effect */
+.big-banners-1:hover, .big-banners-2:hover, .small-banners-1:hover, .small-banners-2:hover, .small-banners-3:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .big-banners-1, .big-banners-2 {
+    flex: 1 1 100%;
+    height: 250px;
+  }
+
+  .small-banners-1, .small-banners-2, .small-banners-3 {
+    flex: 1 1 100%;
+    height: 150px;
+  }
+
+  .big-banners h2 {
+    font-size: 1.8rem;
+  }
+
+  .small-banners h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #banners {
+    padding: 20px 10px;
+  }
+
+  .big-banners h2 {
+    font-size: 1.5rem;
+  }
+
+  .small-banners h2 {
+    font-size: 1rem;
+  }
+
+  .big-banners span {
+    font-size: 0.9rem;
+  }
+
+  .small-banners h5 {
+    font-size: 0.8rem;
+  }
+
+  .banner-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
 }
 /* footer */
 
@@ -395,117 +603,3 @@ margin-right: 50%;
 
 
 
-/* media Query */
-@media only screen and ( max-width:650px){
-
-p{
-  font-size: 19px;
-  
-  color: beige;
-}
-
-
-.a{
-  color: #fcfcfb;
-}
-#banners ,
-h4,
-span {
-  font-size: small;
-  color: rgb(3, 3, 3);
-  text-shadow: #cdebbc;
-}
-#banners .big-banners {
-  display: grid;
-  align-items: center;
-  justify-content: space-around;
-}
-#banners .big-banners div {
-  width: 98%;
- margin: 2%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 25px;
-  background-size: cover;
-  backdrop-filter: blur(8%);
-}
-#banners .big-banners button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  font-size: 10px;
-  font-weight: 500;
-  background-color: transparent;
-  color: rgb(248, 248, 248);
-  border: 1px solid rgb(248, 248, 248);
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-#banners .big-banners div:hover button {
-  background-color: #088178;
-  border: 1px solid #088178;
-}
-#banners .big-banners-1 {
-  background-image: url(./img/bmw\ bg.jpg);
-}
-#banners .big-banners-2 {
-  background-image: url(./img/bmw\ bg1.jpg);
-}
-#banners .small-banners-1 {
-  background-image: url(./img/bmw\ bg2.jpg);
-}
-#banners .small-banners-2 {
-  background-image: url(./img/bmw\ bg3.jpg);
-}
-#banners .small-banners-3 {
-  background-image: url(./img/bmw\ bg4.jpg);
-}
-#banners .small-banners {
-  display: grid;
-  
-  justify-content: space-around;
-}
-#banners .small-banners div {
-  width: 98%;
-  height: 200px;
- 
-  display: grid;
-  flex-direction: column;
-  
-  justify-content: center;
-  padding: 20px;
-  background-size: cover;
-}
-#banners .small-banners h2 {
-  font-size: 20px;
-}
-#banners .small-banners h5 {
-  color: #771818;
-}
-
-
-.b{
-width: 90px;
-height: 10vh;
-}
-
-.butt{
-margin: 0% 17%;
-
-}
-.inco{
-  
-background-color: #000000;
-width: 60%;
-}  
-
-.img-fluid{
-  border-radius: 50%;
-}
-.fa-brands{
-font-size: xx-large;
-color: #1c8108;
-}
-};

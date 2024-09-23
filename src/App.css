@@ -1,49 +1,99 @@
-.App {
-  text-align: center;
+
+.navbar-nav{
+  margin-left:20% ;
+}
+.navbar-nav .nav-link {
+  
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 40px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 .navbar-brand{
   width: 8%;
   height: 100%;
   margin: 0% 9%;
 }
-.active{
-  font-weight: 700;
+
+.navbar-brand img {
+  max-height: 50px; /* Adjust logo size */
   
 }
-.nav-link{
-  justify-content: space-between;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-nav .nav-link.active {
+  color: #007bff; /* Active link color */
+  border-bottom: 2px solid #05be0e;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-nav .nav-link:hover {
+  color: #db0a0a; /* Hover color effect */
+  
+}
+/* Button Styles */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler-icon {
+  width: 25px;
+  height: 25px;
+  background-image: none;
+  border-radius: 3px;
+  background-color: #4b444b; /* Custom color for toggler icon */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-toggler-icon::before {
+  content: '\f0c9'; /* Font Awesome hamburger icon */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
+  .navbar {
+    padding: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    padding: 7px 0;
+  }
+
+  .navbar-brand img {
+    max-height: 40px;
+  }
+}
+
+ 
+
+
+
+
+
+
+
+

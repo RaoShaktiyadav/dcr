@@ -69,10 +69,7 @@ const  App =() => {
               </li>
              
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2"  placeholder="Search..."/>
-              <button class="btn btn-outline-success" type="submit" >Search</button>
-            </form>
+            
           </div>
         </div>
       </nav>
