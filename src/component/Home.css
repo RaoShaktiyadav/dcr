@@ -483,67 +483,137 @@
     font-size: 0.9rem;
   }
 }
-/* footer */
-
-.footer-section{
-background-color: #ffd6d65e;
+/* Footer Section Styles */
+.footer-section {
+  background-color: #ffd6d65e;
+  padding: 40px 0;
+  color: #fafbfb;
+  position: relative;
+  font-family: 'Arial', sans-serif;
 }
 
-
-.fas {
-padding: 5% 5%;
-color: #088178;
-font-size: x-large;
-
-float: left; 
-}
-.far{
-font-size:x-large;
-color: #088178;
-padding: 5% 5%;
-float: left; 
-}
-h4{
-margin: 0% 10%;
-}
-.img-fluid{
-height: 50%;
-width: 60%;
-} 
-.col-lg-4{
-margin-left: 12%;
-
-}
-.footex{
-font-family:Georgia, 'Times New Roman', Times, serif;
+.footer-cta {
+  padding: 20px 0;
 }
 
-.ba1{
-font-size: xx-large;
-border-radius: 20%;
-
-}
-#button{
-background-color: rgb(20, 216, 20);
-margin: 0% 3% 3% 3%;
-}
-.inco{
-background-color: #000000;
-color: #cdd4f8;
-
+.single-cta {
+  display: flex;
+  align-items: center;
+  color: #8401fe;
+  margin-bottom: 20px;
 }
 
-#but{
-background-color: #2242f2;
+.single-cta i {
+  font-size: 2rem;
+  color: #070707; /* Icon color */
+  margin-right: 15px;
+  transition: color 0.3s ease;
 }
-/* .fa-brands{
-border-radius: 50%;
 
-} */
-.price{
-float: left;
-margin-right: 50%;
+.cta-text h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
+
+.cta-text span {
+  font-size: 1rem;
+}
+
+.footer-widget {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-widget-heading h3 {
+  color: #2cff07;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-text p {
+  margin-bottom: 20px;
+}
+
+.subscribe-form input {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  width: 80%;
+  margin-right: 10px;
+  outline: none;
+}
+
+.subscribe-form button {
+  background-color: #0b07ff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #0095e0;
+}
+
+/* Button Styles */
+#button {
+  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+ background-color: #2cff07;
+ border: none;
+ height: 9%;
+ width: 4%;
+ font-size: xx-large;
+ border-radius: 50%;
+  
+  
+  
+  
+}
+
+
+
+.ba1 {
+  color: #ffffff;
+}
+
+/* Icon Hover Effects */
+.single-cta:hover i {
+  color: #0031e0;
+}
+
+.cta-text:hover h4, 
+.cta-text:hover span {
+  color: #4907ff;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cta-text h4, .cta-text span {
+    font-size: 1rem;
+  }
+
+  .footer-widget-heading h3 {
+    font-size: 1.2rem;
+  }
+
+  .subscribe-form input {
+    width: 75%;
+  }
+
+  #button {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+}
+
 
 
 

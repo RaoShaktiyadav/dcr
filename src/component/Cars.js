@@ -395,7 +395,7 @@ const Cars =({ phoneNumber, message })=> {
             </div>
         </div>
     </div>
-    <button  id="button"><i onClick={whatapp} class="fa-brands fa-whatsapp"></i></button>
+    <button  id="button"><i onClick={whatapp} class="fa-brands fa-square-whatsapp fa-beat"></i></button>
     
     {/* <div className="copyright-area">
         <div className="container">

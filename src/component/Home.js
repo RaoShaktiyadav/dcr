@@ -368,7 +368,7 @@ const  Home = ({ phoneNumber, message }) => {
             </div>
         </div>
     </div>
-    <button id="button" onClick={whatapp} ><i class="fa-brands fa-whatsapp ba1" ></i></button>
+    <button id="button" onClick={whatapp} ><i class="fa-brands fa-square-whatsapp fa-beat" ></i></button>
     
     
 </footer>

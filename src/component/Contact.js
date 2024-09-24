@@ -261,7 +261,7 @@ const Contact =({ phoneNumber, message })=> {
             </div>
         </div>
     </div>
-    <button  id="button" onClick={whatapp}><i class="fa-brands fa-whatsapp"></i></button>
+    <button  id="button" onClick={whatapp}><i class="fa-brands fa-square-whatsapp fa-beat"></i></button>
     
     {/* <div className="copyright-area">
         <div className="container">
