@@ -5,7 +5,7 @@
   justify-content: center;
   text-align: center;
   padding: 50px 20px;
-  background: url('./img/black\ s11.jpg') no-repeat center center/cover;
+  background: url('./img/bg.jpg') no-repeat center center/cover;
   color: rgb(255, 255, 255);
   min-height: 100vh;
 }
