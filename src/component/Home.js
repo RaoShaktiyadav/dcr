@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-import log from './img/logo.jpg'
+import log from './img/logo.png'
 import g1 from './img/f1.png'
 import g2 from './img/f2.png'
 import g3 from './img/f3.png'
@@ -31,17 +31,17 @@ const  Home = ({ phoneNumber, message }) => {
 
   
     const whatapp = () => {
-      const encodedMessage = encodeURIComponent("Hi Sir good evining ");
+      const encodedMessage = encodeURIComponent("Hi Sir  ");
       const whatsappLink = `https://wa.me/${+918901636636}?text=${encodedMessage}`;
       window.open(whatsappLink, '_blank');
     };
     const what15 = () => {
-      const encodedMessage = encodeURIComponent("Hi Sir good evining we picup a car for one month and we get offer of 15% off");
+      const encodedMessage = encodeURIComponent("Hi Sir I picup a car for one month and we get offer of 15% off");
       const whatsappLink = `https://wa.me/${+918901636636}?text=${encodedMessage}`;
       window.open(whatsappLink, '_blank');
     };
     const what10 = () => {
-      const encodedMessage = encodeURIComponent("Hi Sir good evining we picup a car for ten days and we get offer of 10% off ");
+      const encodedMessage = encodeURIComponent("Hi Sir I picup a car for ten days and we get offer of 10% off ");
       const whatsappLink = `https://wa.me/${+918901636636}?text=${encodedMessage}`;
       window.open(whatsappLink, '_blank');
     };

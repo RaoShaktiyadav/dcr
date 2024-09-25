@@ -1,4 +1,4 @@
-import logo from "./component/img/logo.jpg";
+import logo from "./component/img/logo.png";
 import "./App.css";
 import "./component/Contact.css";
 import "./component/Home.css";

@@ -1,5 +1,5 @@
 import React from 'react'
-import log from './img/logo.jpg'
+import log from './img/logo.png'
 import { useState } from "react";
 import f1 from './img/black s11.jpg'
 import f2 from './img/white s11.jpg'

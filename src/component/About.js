@@ -1,5 +1,5 @@
 import React from "react";
-import log from './img/logo.jpg'
+import log from './img/logo.png'
 import { useState } from "react";
 const About=({ phoneNumber, message })=> {
 
